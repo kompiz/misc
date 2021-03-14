@@ -1,8 +1,9 @@
-" Make shift+enter insert line without entering insert mode (note: shift+enter added in iterm2)
+" Make shift+enter insert line without entering insert mode (note: shift+enter sends escape sequence "[13;2u", added in iterm2)
 nnoremap <S-Enter> moO<Esc>`o
 
 " Make shift+spacebar insert blankspace
-nnoremap <S-Space> i<Space><Esc>
+" nnoremap <S-Space> i<Space><Esc>
+" Need to figure out proper escape sequence and add to iterm2 in order to work
 
 " Make ctrl+e and ctrl+a work
 map <C-E> $
