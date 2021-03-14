@@ -1,6 +1,9 @@
 " Make shift+enter insert line without entering insert mode (note: shift+enter added in iterm2)
 nnoremap <S-Enter> moO<Esc>`o
 
+" Make spacebar insert blankspace
+nnoremap <space> i<space><esc>
+
 " Make ctrl+e and ctrl+a work
 map <C-E> $
 map <C-A> 0|
