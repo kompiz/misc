@@ -21,7 +21,7 @@ alias ll="ls -al"
 alias mp="multipass"
 
 # Check if tmux is running, if it is, attach 
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux attach
+if [ -z "$TMUX" ]; then
+  exec tmux attach || tmux 
 fi
 
