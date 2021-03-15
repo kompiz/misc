@@ -33,7 +33,7 @@ parse_git_branch() {
 
 export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
 
-# Check if tmux is running, if it is, attach 
-if [ -z "$TMUX" ]; then
-  exec tmux attach || tmux 
+# Tmux checker and/or attacher/starter
+if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
+  tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
 fi
