@@ -19,6 +19,12 @@ source <(kubectl completion bash) # setup autocomplete in bash into the current 
 # Aliases
 alias ll="ls -al"
 alias mp="multipass"
+alias k="kubectl"
+alias kg="kubectl get"
+alias kd="kubectl describe"
+alias kns="kubens"
+alias kctx="kubectx"
+alias ..="cd .."
 
 # Check if tmux is running, if it is, attach 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
