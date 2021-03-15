@@ -1,7 +1,7 @@
-# Don't print the zsh thing 
+# Don't print the zsh warning in macos terminal 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Look these up
+# Add colors to macos terminal
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
