@@ -1,3 +1,6 @@
+" Some nice settings for editing yaml
+autocmd FileType yaml setlocal ai ts=2 sts=2 sw=2 et
+
 " Make shift+enter insert line without entering insert mode (note: shift+enter sends escape sequence "[13;2u", added in iterm2)
 nnoremap <S-Enter> moO<Esc>`o
 
