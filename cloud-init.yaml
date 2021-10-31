@@ -1,0 +1,14 @@
+users:
+  - name: mjau
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    lock_passwd: true
+    ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXJjlAEv3raZ6bujhCuT2eS3Zji+xKZLW6bkMFRLxJ/0Vq14/M3YTkl3nCvO0swSzUv2w9gab93odR7X8uDqwk4adzIC0iTIiVYdgUVX2ZbXDKxjO4U73IWIrHMR4q54uvH8R771ZdbhwxmrHmbAx9PjVq7lAWjgxzP6m6jpi7irL61nqEOn5lSO2G8okluG8aumw5bSvujMwYGKliXyzoQIIEZNES7aO9r+fTzriwHfGc9mdAU6dX1Yy1oBS9evS8L5OUNr3CCiFawn15W8jw8BEnpKfWeOQIyhjHBzYWskoh/lnNcByZ+6ecLoGFiPl8lg6vsg+5QvEnX0irMhHeT1GXXl8XKq1iybG/aBUnsqPSa904YXYecZnY5gbjbSo6yJQLhCc3HhSGWrovb5X77W0xBogS4tkpZ9+9cpoppTaalD2JZqkBRVSu60EwmS+uQr7EPzcrorVZJLGPMmbmGPnfWHVWDJO7vjh+0tRvzJL1fuFzwXx3E5PblWWR5uk= mjau@nostromo
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDC+9qxu+IuTZPM0ndZ57/NrU3reRA2QkTResbguf7UBbc59MJ3msMH74FKTjbkXoa8mcOt6RhLARQWwoRRjl/Mex1g6HFcygFeTVyy/KdSfjgay6kFwRmKXdwBzEBfBnjOA95aYZ8A1toNa6/OcZ4ojycBYOwMd8qAd4K6s5EvQ/a38qEyjVHeq7beCY4FlqJcTfqrh5drlI3xu1e9dqhTo60um8J0C/ctmFgaIKQZZStQu8wochJUPH7STtUHw0tLW9wIrbjl8nc1FqEe5Q8VEq4tQ/RZ73x4ylphLowDMR+4UOERmHi9iUQaHSEogjztUz1aJK64YyJ5TLXflLariYkc+H7aFWWpF5HeHbk133CVkoedaiOVKzuuM0eniH2RgoobqsmV/MSNq3kiAU+/VVQlIm/KwsqqixKFUw88UhiMmyGZ1h5HcRERgyEqtFbLDLmiuAAgV9U3HFPJ8iN0NVNA1m2kR6p/X18S5w2si0I5jzPQmywOoyraC4m8DRU= mjau@sulaco
+package_update: true
+
+packages:
+ - curl
+ - avahi-daemon
+ - docker
